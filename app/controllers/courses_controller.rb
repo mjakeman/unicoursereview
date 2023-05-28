@@ -35,6 +35,13 @@ class CoursesController < ApplicationController
     end
   end
 
+  def destroy
+    @course = Course.find(params[:id])
+    @course.destroy
+
+    redirect_to root_path, status: :see_other
+  end
+
   private
     def course_params
       params.require(:course).permit(:title, :description)
