@@ -1,24 +1,16 @@
-# README
+# Uni Course Review
+Are you a student in NZ? Want to see reviews for your course(s)?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Easy. Just look at studentcoursereview.co.nz
 
-Things you may want to cover:
+> We’re having trouble finding that site.
 
-* Ruby version
+Oh.
 
-* System dependencies
+What about coursereview.co.nz?
 
-* Configuration
+> 500 Internal Server Error
 
-* Database creation
+Well that sucks.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Third time's the charm... right?
