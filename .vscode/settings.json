@@ -1,3 +1,12 @@
 {
-    "cSpell.language": "en-GB"
+    "ruby.format": false,
+    "editor.formatOnSave": true,
+    "[ruby]": {
+        "editor.indentSize": 2,
+        "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
+    },
+    "[erb]": {
+        "editor.indentSize": 2
+    },
+    "standardRuby.mode": "enableUnconditionally"
 }
