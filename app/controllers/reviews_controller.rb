@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+  http_basic_authenticate_with name: "mjakeman", password: "secret", only: :destroy
+
   def create
     @course = Course.find(params[:course_id])
     @review = @course.reviews.create(review_params)
