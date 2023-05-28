@@ -14,7 +14,12 @@
 </ul>
 
 <h2>Reviews</h2>
-<%= render @course.reviews %>
+
+<div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+  <ul class="divide-y divide-gray-100 py-2 px-4">
+    <%= render @course.reviews %>
+  </ul>
+</div>
 
 <h2>Add a review:</h2>
 <%= render 'reviews/form' %>

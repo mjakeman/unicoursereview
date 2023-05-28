@@ -1,11 +1,16 @@
-<h1>Courses</h1>
+<h1 class="text-3xl font-bold underline mb-4">Courses</h1>
 <p>Total Courses: <%= Course.public_count %></p>
-<ul>
+<div class="grid gap-4 grid-cols-3">
     <% @courses.each do |course| %>
-        <li>
-            <%= link_to course.title, course %>
-        </li>
+      <a href="<%= course_path(course)%>">
+        <div class="mx-auto max-w-md rounded-lg bg-white shadow">
+          <div class="p-4">
+            <h3 class="text-xl font-medium text-gray-900"><%= course.title %></h3>
+            <p class="mt-1 text-gray-500"><%= course.description %></p>
+          </div>
+        </div>
+      </a>
     <% end %>
-</ul>
+</div>
 
-<%= link_to "New Course", new_course_path %>
+<%= link_to "New Course", new_course_path, class: "inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400" %>

@@ -1,17 +1,16 @@
 <% unless review.archived? %>
-    <p>
-        <strong>Author:</strong>
-        <%= review.commenter %>
-    </p>
-    <p>
-        <strong>Review:</strong>
-        <%= review.body %>
-    </p>
+  <li class="flex flex-col py-4 gap-4">
+    <div class="mr-4 flex-1">
+      <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+      <div class="mt-1 text-sm text-gray-400"><span><%= review.commenter %></span> • <span><%= time_ago_in_words(review.created_at) %></span></div>
+    </div>
+    <p><%= review.body %></p>
 
     <p>
-        <%= link_to "Destroy Review", [review.course, review], data: {
-            turbo_method: :delete,
-            turbo_confirm: "Are you sure?"
-        } %>
+      <%= link_to "Destroy Review", [review.course, review], data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+      }, class: "inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-100 focus:ring focus:ring-gray-100 disabled:cursor-not-allowed disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400"%>
     </p>
+  </li>
 <% end %>
