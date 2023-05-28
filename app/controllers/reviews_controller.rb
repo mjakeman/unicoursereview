@@ -8,6 +8,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:commenter, :body)
+    params.require(:review).permit(:commenter, :body, :status)
   end
 end
