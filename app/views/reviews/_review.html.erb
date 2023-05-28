@@ -1,7 +1,7 @@
 <% unless review.archived? %>
   <li class="flex flex-col py-4 gap-4">
     <div class="mr-4 flex-1">
-      <h4 class="text-lg font-medium text-gray-900">The Bank of England Risks Hiking Too Far Ahead</h4>
+      <h4 class="text-lg font-medium text-gray-900"><%= review.title %></h4>
       <div class="mt-1 text-sm text-gray-400"><span><%= review.commenter %></span> • <span><%= time_ago_in_words(review.created_at) %></span></div>
     </div>
     <p><%= review.body %></p>
