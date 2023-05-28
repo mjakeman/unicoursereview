@@ -1,5 +1,5 @@
 # Uni Course Review
-Are you a student in NZ? Want to see reviews for your course(s)?
+Are you a student in NZ? Do you want to see reviews for your uni papers?
 
 Easy. Just look at studentcoursereview.co.nz
 
@@ -14,3 +14,7 @@ What about coursereview.co.nz?
 Well that sucks.
 
 Third time's the charm... right?
+
+## Licence
+
+It's under AGPL. Do what you want, just share the changes :)
