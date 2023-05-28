@@ -7,4 +7,11 @@
         <strong>Review:</strong>
         <%= review.body %>
     </p>
+
+    <p>
+        <%= link_to "Destroy Review", [review.course, review], data: {
+            turbo_method: :delete,
+            turbo_confirm: "Are you sure?"
+        } %>
+    </p>
 <% end %>

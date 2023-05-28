@@ -5,6 +5,13 @@ class ReviewsController < ApplicationController
     redirect_to course_path(@course)
   end
 
+  def destroy
+    @course = Course.find(params[:course_id])
+    @review = @course.reviews.find(params[:id])
+    @review.destroy
+    redirect_to course_path(@course), status: :see_other
+  end
+
   private
 
   def review_params
